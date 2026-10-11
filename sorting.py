@@ -50,5 +50,17 @@ print("Hello World.")
 #         return final
 
 # print(solution.fun(20))
-
-
+import math
+class divisible:
+    def fun(n):
+        num = n
+        a = int(math.sqrt(num))
+        final = []
+        for i in range(1,a+1):
+            if num%i == 0:
+                final.append(i)
+                if i != num//i:
+                    final.append(num//i)
+        # return final.sort() give none if you wnat to use this method do like this final.sort() next line return final
+        return sorted(final)
+print(divisible.fun(25))
