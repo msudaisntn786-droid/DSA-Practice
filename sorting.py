@@ -1,4 +1,4 @@
-# print("Hello World!")
+print("Hello World!")
 
 # def armstrong(n):
 #     original = n
@@ -39,16 +39,16 @@
 # # s = palindrome() use this when you use @staticmethod in class other wise it give type error 
 # print(palindrome.fun('nitin'))
 
-class solution:
-    def fun(n):
-        final = []
-        num = n
-        for i in range(1,(num//2)+1):
-            if num%i==0:
-                final.append(i)
-        final.append(num)
-        return final
+# class solution:
+#     def fun(n):
+#         final = []
+#         num = n
+#         for i in range(1,(num//2)+1):
+#             if num%i==0:
+#                 final.append(i)
+#         final.append(num)
+#         return final
 
-print(solution.fun(20))
+# print(solution.fun(20))
 
 
