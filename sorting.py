@@ -1,4 +1,4 @@
-print("Hello World!")
+print("Hello World.")
 
 # def armstrong(n):
 #     original = n
