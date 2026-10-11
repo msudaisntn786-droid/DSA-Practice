@@ -50,17 +50,28 @@ print("Hello World.")
 #         return final
 
 # print(solution.fun(20))
-import math
-class divisible:
+# import math
+# class divisible:
+#     def fun(n):
+#         num = n
+#         a = int(math.sqrt(num))
+#         final = []
+#         for i in range(1,a+1):
+#             if num%i == 0:
+#                 final.append(i)
+#                 if i != num//i:
+#                     final.append(num//i)
+#         # return final.sort() give none if you wnat to use this method do like this final.sort() next line return final
+#         return sorted(final)
+# print(divisible.fun(25))
+
+class dicfrequency:
     def fun(n):
         num = n
-        a = int(math.sqrt(num))
-        final = []
-        for i in range(1,a+1):
-            if num%i == 0:
-                final.append(i)
-                if i != num//i:
-                    final.append(num//i)
-        # return final.sort() give none if you wnat to use this method do like this final.sort() next line return final
-        return sorted(final)
-print(divisible.fun(25))
+        dic = {}
+        for i in num:
+            dic[i] = dic.get(i,0)+1
+        return dic
+in_put = input("Enter value in spaces : ")
+final_input = [int(i) for i in in_put.split()]
+print(dicfrequency.fun(final_input))
