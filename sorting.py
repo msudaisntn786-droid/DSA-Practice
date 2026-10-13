@@ -65,13 +65,31 @@ print("Hello World.")
 #         return sorted(final)
 # print(divisible.fun(25))
 
-class dicfrequency:
-    def fun(n):
-        num = n
-        dic = {}
-        for i in num:
-            dic[i] = dic.get(i,0)+1
-        return dic
-in_put = input("Enter value in spaces : ")
-final_input = [int(i) for i in in_put.split()]
-print(dicfrequency.fun(final_input))
+# class dicfrequency:
+#     def fun(n):
+#         num = n
+#         dic = {}
+#         for i in num:
+#             dic[i] = dic.get(i,0)+1
+#         return dic
+# in_put = input("Enter value in spaces : ")
+# final_input = [int(i) for i in in_put.split()]
+# print(dicfrequency.fun(final_input))
+
+# class solution:
+#     def fun(self,n,m):
+#         index = [0]*11
+#         for i in n:
+#             index[i] +=1
+#             final = []
+#         for i in m:
+#             if i in n:
+#                 final.append(index[i])
+#             else:
+#                 final.append(0)
+#         return final
+# in_put1 = list(map(int, input("Enter you numbers with spaces :").split()))
+# in_put2 = list(map(int, input("Enter you numbers : ").split()))
+# s = solution()
+# print(s.fun(in_put1,in_put2))
+
