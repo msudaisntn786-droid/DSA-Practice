@@ -77,7 +77,7 @@ print("Hello World.")
 # print(dicfrequency.fun(final_input))
 
 # class solution:
-#     def fun(self,n,m):
+#     def fun(n,m):
 #         index = [0]*11
 #         for i in n:
 #             index[i] +=1
@@ -90,6 +90,23 @@ print("Hello World.")
 #         return final
 # in_put1 = list(map(int, input("Enter you numbers with spaces :").split()))
 # in_put2 = list(map(int, input("Enter you numbers : ").split()))
-# s = solution()
-# print(s.fun(in_put1,in_put2))
 
+# print(solution.fun(in_put1,in_put2))
+
+class solution:
+    def fun(n,m):
+        dic = {}
+        final = []
+        for i in n:
+            dic[i] = dic.get(i,0)+1
+        for i in m :
+            if i in n:
+                final.append(dic[i])
+            else:
+                final.append(0)
+        return final
+
+in_put1 = list(map(int, input("Enter you numbers with spaces :").split()))
+in_put2 = list(map(int, input("Enter you numbers : ").split()))
+
+print(solution.fun(in_put1,in_put2))        
