@@ -120,3 +120,18 @@ print("Hello World.")
 #                 largest = num[i]
 #         return largest
 # print(solution.fun())
+
+# class solution:
+#     def fun(n=[2,70,44,-65,8,99,6,121,22]):
+#         num = n
+#         largest = float("-inf")
+#         second_largest = float("-inf")
+#         for i in range(len(num)):
+#             if num[i] > largest:
+#                 second_largest = largest
+#                 largest = num[i]
+#             elif num[i] != largest and num[i] > second_largest:
+#                 second_largest = num[i]
+#         return f"Largest : {largest}\nSecond Largest : {second_largest}"
+
+# print(solution.fun())
