@@ -93,20 +93,30 @@ print("Hello World.")
 
 # print(solution.fun(in_put1,in_put2))
 
-class solution:
-    def fun(n,m):
-        dic = {}
-        final = []
-        for i in n:
-            dic[i] = dic.get(i,0)+1
-        for i in m :
-            if i in n:
-                final.append(dic[i])
-            else:
-                final.append(0)
-        return final
+# class solution:
+#     def fun(n,m):
+#         dic = {}
+#         final = []
+#         for i in n:
+#             dic[i] = dic.get(i,0)+1
+#         for i in m :
+#             if i in n:
+#                 final.append(dic[i])
+#             else:
+#                 final.append(0)
+#         return final
 
-in_put1 = list(map(int, input("Enter you numbers with spaces :").split()))
-in_put2 = list(map(int, input("Enter you numbers : ").split()))
+# in_put1 = list(map(int, input("Enter you numbers with spaces :").split()))
+# in_put2 = list(map(int, input("Enter you numbers : ").split()))
 
-print(solution.fun(in_put1,in_put2))        
+# print(solution.fun(in_put1,in_put2))      
+
+# class solution:
+#     def fun(n=[2,33,44,-65,8,99,6,121,22]):
+#         num = n
+#         largest = float("-inf")
+#         for i in range(len(num)):
+#             if num[i] > largest:
+#                 largest = num[i]
+#         return largest
+# print(solution.fun())
