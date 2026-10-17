@@ -135,3 +135,16 @@ print("Hello World.")
 #         return f"Largest : {largest}\nSecond Largest : {second_largest}"
 
 # print(solution.fun())
+
+# class solution:
+#     def fun(n=[-5,-2,4,5,6,7]):
+#         num = n
+#         count = 0
+#         for i in range(len(num)-1):
+#             if num[i] <= num[i+1]:
+#                 count +=1
+#             else:
+#                 break
+#         return count == len(num)-1
+
+# print(solution.fun())
